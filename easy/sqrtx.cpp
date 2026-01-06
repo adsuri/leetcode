@@ -3,15 +3,17 @@
 class Solution {
  public:
   int mySqrt(int x) {
-    long largest = 0;
+    int largest = 0;
+    const long long_x = (long) x;
 
-    for (int i = 0; i <= x; ++i) {
-      long long_i = (long) i;
-      long long_x = (long) x;
+    for (long i = 0; (int) i <= x; ++i) {
+      const long square = i * i;
 
-      if (long_i * long_i <= long_x) {
-        largest = i;
-      } else if (long_i * long_i > long_x) {
+      if (square == long_x) {
+        return (int) i;
+      } else if (square < long_x) {
+        largest = (int) i;
+      } else if (square > long_x) {
         return largest;
       }
     }
