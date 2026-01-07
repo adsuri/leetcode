@@ -4,7 +4,7 @@
 #include <string>
 
 class Solution {
-public:
+ public:
     bool canConstruct(std::string ransomNote, std::string magazine) {
         std::unordered_map<char, int> ransom_map;
         std::unordered_map<char, int> magazine_map;

@@ -16,7 +16,7 @@ bool is_vowel(char s) {
     }
 
 class Solution {
-public:
+ public:
     std::string reverseVowels(std::string s) {
         int left = 0;
         int right = s.length() - 1;
