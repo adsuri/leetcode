@@ -19,6 +19,6 @@ class Solution {
       ++valid_chars;
     }
 
-      return valid_chars;
+    return valid_chars;
   }
 };
